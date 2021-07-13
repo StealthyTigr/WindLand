@@ -1,0 +1,235 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+svg {
+  max-height: 100%;
+}
+
+#front_ripple01,
+#back_ripple01 {
+	transform-origin: 685.796px 443.26px;
+	animation-delay: 0s;
+}
+
+#front_ripple02,
+#back_ripple02 {
+	transform-origin: 685.796px 443.26px;
+	animation-delay: -2.5s;
+}
+
+#front_ripple03,
+#back_ripple03 {
+	transform-origin: 685.796px 443.26px;
+	animation-delay: -5s;
+}
+
+#front_ripple04,
+#back_ripple04 {
+	transform-origin: 685.796px 443.26px;
+	animation-delay: -7.5s;
+}
+
+#front_ripple01,
+#back_ripple01,
+#front_ripple02,
+#back_ripple02,
+#front_ripple03,
+#back_ripple03,
+#front_ripple04,
+#back_ripple04 {
+	animation-name: waves;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#light {
+transform-origin: 838.542px 127.164px;
+animation-name: lighthouse;
+animation-duration: 10s;
+animation-time-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+#windmill {
+transform-origin: 838.542px 196.936px;
+animation-name: windmill-spin;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+#clouds {
+transform-origin:704.088px 303.392px;
+animation-name: sun-peak;
+animation-duration: 15s;
+animation-time-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+#sun {
+transform-origin:496.94px 189.719px;
+animation-name: sun-fade;
+animation-duration: 15s;
+animation-time-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+#boat {
+transform-origin:509.154px 397.683px;
+animation-name: boat-bob;
+animation-duration: 7s;
+animation-time-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+#wind01 {
+stroke-dasharray: 310px;
+stroke-dashoffset: 310px;
+animation-name: draw-wind01;
+animation-duration: 6s;
+animation-delay: 2s;
+animation-time-function: linear;
+animation-iteration-count: infinite;
+}
+
+#wind02 {
+stroke-dasharray: 220px;
+stroke-dashoffset: 220px;
+animation-name: draw-wind02;
+animation-duration: 6s;
+animation-time-function: linear;
+animation-iteration-count: infinite;
+}
+
+#wind03 {
+stroke-dasharray: 220px;
+stroke-dashoffset: 220px;
+animation-name: draw-wind03;
+animation-duration: 6s;
+animation-delay: 4s;
+animation-time-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes waves {
+	0%{
+		transform: scale(1);
+		opacity: 0;
+		}
+		25%{
+		opacity: 1;
+			}
+	100%{
+			transform: scale(2);
+			opacity: 0;
+		}
+}
+
+@keyframes lighthouse {
+	0% {
+		transform: scale(1);
+	}
+	45% {
+		transform: scale(2);
+	}
+	55% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes windmill-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes sun-peak {
+	0% {
+	transform: translate(10px, 10px);
+	}
+	40% {
+	transform: translate(-30px, -30px);
+	}
+	60% {
+	transform: translate(-30px, -30px);
+	}
+	100% {
+	transform: translate(10px, 10px);
+	}
+}
+@keyframes sun-fade {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes boat-bob {
+	0% {
+		transform: rotate(0deg) translate(0px, 0px);
+	}
+	25% {
+		transform: rotate(2deg) translate(0px, -3px);
+	}
+	50% {
+		transform: rotate(0deg) translate(0px, 0px);
+	}
+	75% {
+		transform: rotate(2deg) translate(0px, -3px);
+	}
+	100% {
+		transform: rotate(0deg) translate(0px, 0px);
+	}
+}
+
+@keyframes draw-wind01 {
+	0% {
+	stroke-dashoffset: 310px;
+	}
+	50% {
+	stroke-dashoffset: -310px;
+	}
+	100%{
+	stroke-dashoffset: -310px;
+	}
+}
+
+@keyframes draw-wind02 {
+	0% {
+	stroke-dashoffset: 220px;
+	}
+	50% {
+	stroke-dashoffset: -220px;
+	}
+	100%{
+	stroke-dashoffset: -220px;
+	}
+}
+
+@keyframes draw-wind03 {
+	0% {
+	stroke-dashoffset: 220px;
+	}
+	50% {
+	stroke-dashoffset: -220px;
+	}
+	100%{
+	stroke-dashoffset: -220px;
+	}
+}
